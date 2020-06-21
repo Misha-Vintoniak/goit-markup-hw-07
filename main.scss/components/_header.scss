@@ -1,0 +1,38 @@
+.page-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+.site-nav {
+    display: flex;
+    @extend %container;
+
+    .list-logo {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .header-logo {
+        display: block;
+        text-decoration: none;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        @extend %logo;
+    }
+
+    .logo {
+        color: $color-logo;
+    }
+
+    .site-logo {
+        color: $color-hover;
+    }
+}

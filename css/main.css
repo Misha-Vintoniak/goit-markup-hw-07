@@ -1,0 +1,84 @@
+body {
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-nav {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+
+.site-nav .header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 80px;
+  background-color: #ffffff;
+  z-index: 9;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-nav .list-logo {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .header-logo {
+  display: block;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.site-nav .logo {
+  color: #000000;
+}
+
+.site-nav .site-logo {
+  color: #2196F3;
+}
+/*# sourceMappingURL=main.css.map */

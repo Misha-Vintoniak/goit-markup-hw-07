@@ -1,0 +1,110 @@
+.footer {
+  @extend %position;
+
+  .container {
+    @extend %container;
+  }
+  background: $background-footer;
+  color: $color-text-white;
+  display: flex;
+  margin-bottom: 0px;
+  padding-top: 48px;
+  padding-bottom: 0px;
+  font-style: normal;
+
+  .footer-nav {
+    @extend %list;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+  .adres {
+    margin: 0px auto 0px 0px;
+  }
+  .join {
+    margin-left: 69px;
+    width: 206px;
+  }
+  .sign {
+    width: 570px;
+    margin-left: 94px;
+  }
+}
+.adres {
+  white-space: nowrap;
+  .address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $color-footer;
+    text-decoration: none;
+  }
+  .address:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  & p {
+    margin-top: 0px;
+    margin-bottom: 9px;
+  }
+}
+.title {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.join {
+  & .social {
+    margin: 20px 0px 0px 0px;
+    justify-content: space-between;
+  }
+}
+.sign {
+  display: inline-block;
+  .signature {
+    margin-top: 20px;
+    width: 340px;
+    height: 50px;
+    display: inline-block;
+    color: $color-footer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-right: 12px;
+    padding: 12px 18px;
+    background-color: $background-footer;
+  }
+  & .button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 62px 10px 29px;
+    width: 200px;
+    height: 50px;
+    background: $color-hover;
+    color: $color-text-white;
+
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    border: 1px solid transparent;
+  }
+  & .button:active,
+  & .button:hover {
+    transform: scale(1.1);
+    background-color: $color-footer;
+  }
+  .icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+}

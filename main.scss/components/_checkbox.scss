@@ -1,0 +1,53 @@
+.checkbox-container {
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+  @extend %list;
+
+  & .form-field {
+    display: contents;
+    align-items: center;
+    width: 400px;
+    height: 24px;
+  }
+
+  .checkbox-text {
+    padding-left: 36px;
+    padding-bottom: 0px;
+  }
+
+  .icon-check {
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid $color-text-first;
+    border-radius: 2px;
+    transition: $transition;
+  }
+
+  .checkbox-input {
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+  }
+}
+
+.checkbox-input:active ~ .icon-check,
+.checkbox-input:checked ~ .icon-check {
+  background-image: url(../img/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $color-hover;
+  transition: background-image $time;
+}

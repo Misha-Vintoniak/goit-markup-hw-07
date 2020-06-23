@@ -1,0 +1,37 @@
+.decision {
+  @extend %position;
+  @extend %container;
+  padding-top: 0px;
+
+  .list {
+    @extend %list;
+  }
+
+  & img {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  & .item {
+    position: relative;
+  }
+
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & h3 {
+    margin: 0px;
+  }
+
+  & .shadow {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 0px;
+    color: $color-text-white;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    padding: 27px;
+  }
+}

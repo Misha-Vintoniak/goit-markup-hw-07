@@ -1,0 +1,39 @@
+.items {
+  margin: 0px 0px 0px auto;
+  padding: 0px;
+  @extend %list;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  .icon {
+    margin-right: 10px;
+    --color1: #757575;
+    --color4: #757575;
+  }
+
+  .item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.link {
+  @extend %link;
+  color: $color-text-second;
+  padding: 32px 0px 32px 0px;
+
+  &:hover {
+    color: $color-hover;
+  }
+  &:hover .icon {
+    --color1: #2196f3;
+    --color4: #2196f3;
+  }
+}

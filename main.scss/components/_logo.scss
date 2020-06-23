@@ -1,0 +1,23 @@
+.header-logo {
+  display: block;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  @extend %logo;
+}
+
+.logo {
+  color: $color-hover;
+}
+
+.logo-black {
+  color: $color-logo;
+}
+.logo-white {
+  color: $color-text-white;
+}
+.footer-logo {
+  @extend %logo;
+  margin-bottom: 10px;
+  display: flex;
+}

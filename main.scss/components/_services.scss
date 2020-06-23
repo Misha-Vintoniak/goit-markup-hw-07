@@ -1,0 +1,90 @@
+.services {
+  @extend %list;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: -15px -15px 0 -15px;
+  padding-left: 0px;
+  padding-bottom: 94px;
+
+  .item-services {
+    width: 370px;
+    margin: 15px;
+  }
+
+  .list-services {
+    @extend %link;
+    display: block;
+
+    transition: $transition;
+    cursor: pointer;
+  }
+  h2 {
+    @extend %list;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 0px;
+    color: $color-text-first;
+    margin-bottom: 4px;
+  }
+  .list-services {
+    display: block;
+    @extend %list;
+    transition: $transition;
+    cursor: pointer;
+  }
+  .overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .kontent {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    height: 100%;
+
+    transform: translateY(101%);
+    transition: transform $time;
+
+    color: $color-text-white;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px 63px 24px;
+    margin: 0px;
+
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+.item-services {
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  &:focus .kontent,
+  &:hover .kontent {
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .bloc {
+    border: 1px solid #eeeeee;
+    /* border-radius: 0px 0px 5px 5px; */
+    padding: 24px 20px;
+  }
+
+  .list-text {
+    @extend %link;
+    margin: 0px;
+
+    color: $color-text-second;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}

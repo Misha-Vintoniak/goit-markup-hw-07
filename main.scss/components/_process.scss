@@ -1,0 +1,47 @@
+// .border {
+//     border-bottom: 1px solid #ececec;
+// }
+
+.process {
+    @extend %position;
+    @extend %container;
+    @extend %list;
+    text-align: left;
+
+    & .item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    & svg {
+        margin: auto;
+    }
+
+    & h3 {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0px 0px 10px;
+    }
+
+    & p {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    & .text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $color-text-second;
+    }
+}
+
+.operation {
+
+    width: 270px;
+    height: 120px;
+    background-color: $background-second;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
